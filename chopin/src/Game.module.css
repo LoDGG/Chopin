@@ -1,0 +1,183 @@
+/* General styling for the Game component */
+.gameContainer {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text for better readability */
+  font-family: 'Roboto', sans-serif; /* Font style */
+  padding: 20px;
+  min-height: 100vh; /* Full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Central container styling */
+.gameInnerContainer {
+  background-color: #1e1e1e;
+  border-radius: 15px;
+  padding: 40px;
+  width: 700px;  /* Make the container square-ish */
+  height: 500px; /* Add a fixed height to make it square */
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for buttons */
+.gameButton {
+  background-color: #1db954; /* Spotify green color */
+  color: white; /* White text on buttons */
+  padding: 12px 30px; /* Comfortable padding */
+  border: none; /* No border */
+  border-radius: 50px; /* Smooth round buttons */
+  font-size: 16px; /* Readable font size */
+  font-weight: 500; /* Medium weight font */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth hover effects */
+  margin: 15px; /* Space between buttons */
+}
+
+.gameButton:hover {
+  background-color: #1ed760; /* Lighter Spotify green on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Styling for input fields */
+.gameInput {
+  padding: 15px 50px; /* Increase padding for a larger feel */
+  border-radius: 25px; /* Rounded corners */
+  border: none; /* No border */
+  font-size: 18px; /* Larger font size for readability */
+  width: 100%; /* Make input field take up a good portion of the width */
+  background-color: #292929; /* Dark background for inputs */
+  color: white; /* White text */
+  text-align: center; /* Center the input text */
+  transition: background-color 0.3s ease; /* Smooth background change on focus */
+}
+
+.playlistInputContainer {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center the input field horizontally */
+  margin-top: 50px; /* Space above the input */
+  background-color: none
+  
+}
+
+
+.gameInput::placeholder {
+  color: #aaa; /* Lighter placeholder text */
+}
+
+.gameInput:focus {
+  outline: none;
+  background-color: #383838; /* Slightly lighter background on focus */
+}
+
+/* Playlist link */
+.playlistLink {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #1db954;
+  transition: color 0.3s ease;
+}
+
+.playlistLink a {
+  color: #1db954; /* Spotify green link */
+  text-decoration: none; /* No underline */
+}
+
+.playlistLink a:hover {
+  color: #1ed760; /* Lighter green on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Replay and Leave button container */
+.replayOrLeave {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.replayOrLeave button {
+  margin: 0 15px; /* Add spacing between the two buttons */
+}
+
+/* Smooth fade-in transition for the playlist link */
+.smoothTransition {
+  opacity: 0; /* Start invisible */
+  transition: opacity 0.5s ease-in-out; /* Smooth fade-in */
+}
+
+.smoothTransition.show {
+  opacity: 1; /* Fade-in */
+}
+
+/* Add this to Game.module.css */
+
+/* Container for the album image */
+
+
+
+
+.playlistLink {
+  margin-top: 20px; /* Space above the playlist link */
+  text-align: center; /* Center align the text */
+  color: #ffffff; /* White text color */
+  font-size: 18px; /* Font size for the playlist text */
+  line-height: 1.5; /* Line height for better readability */
+}
+.coverImageContainer {
+  margin-bottom: 30px; /* Space below the image */
+}
+/* Styling for the album cover image */
+.playlistCoverPicture {
+  width: 250px; /* Set a fixed width for the album image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+}
+
+/* Styling for the Spotify link */
+.playlistLink a {
+  color: #1db954; /* Spotify green color for links */
+  text-decoration: none; /* No underline for links */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.playlistLink a:hover {
+  color: #1ed760; /* Lighter green on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Styling for the now playing text */
+.nowPlaying {
+  font-size: 20px; /* Larger font size for the song and artist name */
+  font-weight: 500; /* Medium weight for the text */
+  text-align: center; /* Center the text */
+  color: #ffffff; /* White text for dark mode */
+  margin-bottom: 15px; /* Space between the text and the album image */
+}
+
+/* Container for the album image */
+.albumImageContainer {
+  width: 250px; /* Set a fixed width for the album image container */
+  height: 250px; /* Set a fixed height for the container */
+  margin: 0 auto; /* Center the image container */
+  border-radius: 15px; /* Rounded corners for the container */
+  overflow: hidden; /* Ensure image doesn't overflow */
+  background-color: #292929; /* Dark background color for the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the now playing album image */
+.nowPlayingImage {
+  width: 100%; /* Make the image fit the container */
+  height: 100%; /* Ensure the image fills the container */
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  border-radius: 10px; /* Rounded corners for the image itself */
+}

@@ -1,0 +1,52 @@
+/* Login.css */
+body {
+    background-color: #121212;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+  }
+  
+  .Login {
+    text-align: center;
+    background-color: #1c1c1c;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .Login a {
+    text-decoration: none;
+    background-color: #1db954; /* Spotify Green */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Space between the logo and text */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .Login a:hover {
+    background-color: #1ed760;
+    transform: scale(1.05);
+  }
+  
+  .Login a img.spotify-logo {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .Login h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+  }
+  
